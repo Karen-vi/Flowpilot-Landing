@@ -1,14 +1,15 @@
 import FloatingIcon from "../components/FloatingIcon";
 import FloatingText from "../components/FloatingText";
 import CtaBtn from "../components/CtaBtn";
+import Menu from "../components/Menu";
 
 export default  function Hero() {
     return (
         <div className="relative flex flex-col p-6 md:p-10">
 
             
-           
             <div className="relative  z-10 w-full min-h-screen overflow-visible   rounded-[32px] mt-20">
+                <Menu/>
                 <FloatingIcon />
                 
                 <FloatingText
@@ -36,7 +37,7 @@ export default  function Hero() {
 
                  <div className="absolute top-[680px] left-4 right-4 md:top-[80%] md:left-[15%] md:right-auto flex gap-4">
                     <CtaBtn text="See Demo" className="bg-btn-primary whitespace-nowrap text-white px-4 py-2 rounded-lg cursor-pointer" />
-                    <CtaBtn text="See Demo" className="bg-btn-secondary whitespace-nowrap text-white px-4 py-2 rounded-lg cursor-pointer" />
+                    <CtaBtn text="How it Works" className="bg-btn-secondary whitespace-nowrap text-white px-4 py-2 rounded-lg cursor-pointer" />
                 </div>
 
             
