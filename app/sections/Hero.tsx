@@ -2,10 +2,11 @@ import FloatingIcon from "../components/FloatingIcon";
 import FloatingText from "../components/FloatingText";
 import CtaBtn from "../components/CtaBtn";
 import Menu from "../components/Menu";
+import MacWindowMockup from "../components/MacWindowMockup";
 
 export default  function Hero() {
     return (
-        <div className="relative flex flex-col p-6 md:p-10">
+        <div className="flex flex-col p-6 md:p-10">
 
             
             <div className="relative  z-10 w-full min-h-screen overflow-visible   rounded-[32px] mt-20">
@@ -46,7 +47,7 @@ export default  function Hero() {
             
            
 
-
+        <MacWindowMockup></MacWindowMockup>
             
             
         </div>
