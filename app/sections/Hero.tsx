@@ -3,7 +3,7 @@ import FloatingText from "../components/FloatingText";
 import CtaBtn from "../components/CtaBtn";
 import Menu from "../components/Menu";
 import MacWindowMockup from "../components/MacWindowMockup";
-import AllInOneApp from "../components/AllInOneApp";
+import AllInOneApp from "../components/AllInOneAppText";
 
 export default  function Hero() {
     return (
