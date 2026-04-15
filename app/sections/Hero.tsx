@@ -46,10 +46,13 @@ export default  function Hero() {
             </div>
 
             
-           <div className=" ">
-            
-            <AllInOneApp></AllInOneApp>
-            <MacWindowMockup></MacWindowMockup>
+           <div className="flex flex-col md:flex-row items-center gap-2 md:gap-16 w-full">
+            <div className="w-full md:w-1/2 flex justify-center">
+              <AllInOneApp></AllInOneApp>
+            </div>
+            <div className="w-full md:w-1/2 flex justify-center">
+              <MacWindowMockup></MacWindowMockup>
+            </div>
            </div>
             
             

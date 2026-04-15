@@ -4,8 +4,8 @@ import Image from "next/image"
 
 export default function MacWindowMockup() {
   return (
-    <div className="flex items-center justify-center">
-      <div className="w-full max-w-4xl transition-all duration-300 hover:scale-[1.02] hover:shadow-2xl">
+    <div className="w-full flex items-center justify-center px-2 md:px-0">
+      <div className="w-full transition-all duration-300 hover:scale-[1.02] hover:shadow-2xl">
         {/* MACWINDOW CONTAINER */}
         <div className="rounded-2xl border border-white/10 bg-black/40 backdrop-blur-xl shadow-2xl overflow-hidden">
           {/* MACOS TOP BAR */}
