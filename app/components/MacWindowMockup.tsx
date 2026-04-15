@@ -17,16 +17,9 @@ export default function MacWindowMockup() {
               <div className="w-3 h-3 rounded-full bg-green-500 hover:bg-green-600 transition-colors cursor-pointer" />
             </div>
 
-            {/* TITLE */}
-            <div className="absolute left-1/2 transform -translate-x-1/2">
-              <p className="text-xs font-semibold text-white/80">FlowPilot AI Dashboard</p>
-            </div>
-
-            {/* SPACER */}
             <div className="w-12" />
           </div>
 
-          {/* CONTENT AREA */}
           <div className="relative bg-black/80 aspect-video overflow-hidden">
             <Image
               src="/flowpilotui.png"

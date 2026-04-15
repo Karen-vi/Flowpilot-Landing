@@ -34,10 +34,10 @@ export default  function Hero() {
                 title="Complete Agentic control"
                 textStyle="text-2xl max-w-xs"
                 description="Harness the power of AI without losing human oversight."
-                className="top-[550px] left-4 md:top-[70%] md:left-[15%]"
+                className="top-[65%] left-4 md:top-[70%] md:left-[15%]"
                 />
 
-                 <div className="absolute top-[680px] left-4 right-4 md:top-[80%] md:left-[15%] md:right-auto flex gap-4">
+                 <div className="absolute top-[82%] left-4 right-4 md:top-[85%] md:left-[15%] md:right-auto flex gap-4">
                     <CtaBtn text="See Demo" className="bg-btn-primary whitespace-nowrap text-white px-4 py-2 rounded-lg cursor-pointer" />
                     <CtaBtn text="How it Works" className="bg-btn-secondary whitespace-nowrap text-white px-4 py-2 rounded-lg cursor-pointer" />
                 </div>
@@ -46,11 +46,11 @@ export default  function Hero() {
             </div>
 
             
-           <div className="flex flex-col md:flex-row items-center gap-2 md:gap-16 w-full">
-            <div className="w-full md:w-1/2 flex justify-center">
+           <div className="flex flex-col md:flex-row items-center gap-5 md:gap-16 w-full mt-8 md:mt-0">
+            <div className="w-full md:w-1/2   flex justify-center">
               <AllInOneApp></AllInOneApp>
             </div>
-            <div className="w-full md:w-1/2 flex justify-center">
+            <div className="w-full md:w-1/2 flex justify-center mt-10 md:mt-0">
               <MacWindowMockup></MacWindowMockup>
             </div>
            </div>
