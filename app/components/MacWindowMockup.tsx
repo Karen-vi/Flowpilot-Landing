@@ -1,10 +1,20 @@
+"use client"
+import { useRef } from "react"
 import Image from "next/image"
-
-
+import { motion, useInView } from "framer-motion"
 
 export default function MacWindowMockup() {
+  const ref = useRef(null)
+  const isInView = useInView(ref, { amount: 0.3 })
+
   return (
-    <div className="w-full flex items-center justify-center px-2 md:px-0">
+    <motion.div
+      ref={ref}
+      initial={{ opacity: 0, y: 40 }}
+      animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 40 }}
+      transition={{ duration: 0.6, ease: "easeOut" }}
+      className="w-full flex items-center justify-center px-2 md:px-0"
+    >
       <div className="w-full transition-all duration-300 hover:scale-[1.02] hover:shadow-2xl">
         {/* MACWINDOW CONTAINER */}
         <div className="rounded-2xl border border-white/10 bg-black/40 backdrop-blur-xl shadow-2xl overflow-hidden">
@@ -32,6 +42,6 @@ export default function MacWindowMockup() {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   )
 }
