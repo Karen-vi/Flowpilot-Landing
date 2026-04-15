@@ -3,6 +3,7 @@ import FloatingText from "../components/FloatingText";
 import CtaBtn from "../components/CtaBtn";
 import Menu from "../components/Menu";
 import MacWindowMockup from "../components/MacWindowMockup";
+import AllInOneApp from "../components/AllInOneApp";
 
 export default  function Hero() {
     return (
@@ -15,7 +16,7 @@ export default  function Hero() {
                 
                 <FloatingText
                 title="Flow Pilot"
-                textStyle="text-3xl md:text-4xl max-w-xs"
+                textStyle="text-3xl md:text-4xl max-w-xs text-title"
                 description="Bring your entire team's workflow into a single, unified space."
                 className="top-4 left-4 md:top-[10%] md:left-[15%]"
                 />
@@ -45,9 +46,11 @@ export default  function Hero() {
             </div>
 
             
-           
-
-        <MacWindowMockup></MacWindowMockup>
+           <div className=" ">
+            
+            <AllInOneApp></AllInOneApp>
+            <MacWindowMockup></MacWindowMockup>
+           </div>
             
             
         </div>
