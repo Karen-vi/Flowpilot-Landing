@@ -2,7 +2,8 @@
 
 import Feature from "./sections/Feature";
 import Hero from "./sections/Hero";
-import SignupSection from "./sections/SignupSection";
+import Review from "./sections/Review";
+import SignupSection from "./sections/Signup";
 
 
 export default function Home() {
@@ -11,6 +12,7 @@ export default function Home() {
       <main >
         <Hero />
         <Feature/>
+        <Review/>
         <SignupSection/>
       </main>
     </div>

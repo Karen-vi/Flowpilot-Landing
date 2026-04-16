@@ -59,7 +59,7 @@ export default function FormSection() {
           Get early access
         </motion.h2>
         <motion.p variants={item} className="text-sm font-arial text-center">
-          All in one Custom Code, MCP, Ai launchpad for Webflow.
+          Unlocking the creative space where innovation truly happens.
         </motion.p>
 
         <motion.textarea
@@ -86,7 +86,7 @@ export default function FormSection() {
           variants={item}
           className="w-full py-3 bg-btn-primary font-arial  rounded-md  "
         >
-          Join Waitlist
+          Join in
         </motion.button>
       </motion.div>
     </motion.div>
