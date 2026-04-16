@@ -23,12 +23,18 @@ const item: Variants = {
 
 export default function FormSection() {
   return (
-    <div className="flex flex-col items-center justify-center  rounded-2xl shadow-lg bg-gradient-to-b from-white/10 to-white/5 text-white
-                   border border-white/10 transition">
-      <motion.div
-        variants={container}
+    <motion.div variants={container}
         initial="hidden"
-        animate="show"
+        whileInView="show"
+        viewport={{ once: false, amount: 0.2 }} className="relative flex flex-col items-center justify-center  rounded-2xl shadow-lg bg-gradient-to-b from-white/10 to-white/5 text-white border border-white/10 transition">
+        <div className="absolute top-3 left-3 flex gap-2">
+          <span className="w-3 h-3 rounded-full bg-white/80"></span>
+          <span className="w-3 h-3 rounded-full bg-white/80"></span>
+          <span className="w-3 h-3 rounded-full bg-white/80"></span>
+        </div>
+
+    
+      <motion.div 
         className="text-center mb-8 "
       >
         
@@ -78,12 +84,11 @@ export default function FormSection() {
 
         <motion.button
           variants={item}
-          whileHover={{ scale: 1.05, rotate: 1 }}
-          className="w-full py-3 bg-btn-primary hover:bg-blue-700 rounded-md  transition-colors"
+          className="w-full py-3 bg-btn-primary font-arial  rounded-md  "
         >
           Join Waitlist
         </motion.button>
       </motion.div>
-    </div>
+    </motion.div>
   );
 }
