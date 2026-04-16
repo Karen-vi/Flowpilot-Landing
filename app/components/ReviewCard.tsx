@@ -15,7 +15,7 @@ export default function ReviewCard({
   avatarId = 1,
 }: TestimonialCardProps) {
   return (
-    <div className="flex flex-col md:p-6  items-center md:items-start gap-4 text-white p-6 rounded-xl border border-gray-600  w-80">
+    <div className="flex flex-col md:p-6 justify-between h-80 items-center md:items-start gap-4 text-white p-6 rounded-xl border border-gray-600  w-80">
 
       <div className="flex flex-col text-center md:text-left">
         <p className="font-arial leading-relaxed text-gray-600 mb-3">{quote}</p>
@@ -32,8 +32,11 @@ export default function ReviewCard({
         />
 
         <span className="w-2 h-2 rounded-full bg-blue-500"></span>
-        <span className="font-arial">{name}</span>
-        <span className="text-sm text-gray-600">{title}</span>
+
+        <div className="flex flex-col">
+          <span className="font-arial">{name}</span>
+          <span className="text-sm text-gray-600">{title}</span>
+        </div>
       </div>
     </div>
   );

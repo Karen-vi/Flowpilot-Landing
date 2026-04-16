@@ -4,28 +4,27 @@ import TextDescription from "../components/TextDescription";
 export default function Review() {
   return (
     <>
-    <div className="flex flex-col md:flex-row items-center justify-center gap-12 md:gap-20"> 
+    <div className="flex md:mt-16 flex-col md:flex-row items-center justify-center gap-12 md:gap-20"> 
 
         <ReviewCard
-            quote="Outflame turned our branding into a powerful growth tool. Their framework gave us clarity, identity, and confidence to scale across 14 countries."
+            quote="Before this, our workflows were scattered across multiple tools and barely documented. Now everything is centralized, visible, and actually understandable by the entire team."
             name="Slava"
             title="CEO at Oxi Trade"
             avatarId={32} 
         />
 
-        {/* <TextDescription title="The Compound Effect of Unified Intelligence" styles="text-center break-words "></TextDescription> */}
         
         <ReviewCard
-        quote="Outflame turned our branding into a powerful growth tool. Their framework gave us clarity, identity, and confidence to scale across 14 countries."
+        quote="What impressed us most is how quickly an idea turns into a functional system. The platform generated the full workflow—including integrations"
         name="Karen"
-        title="CEO at Oxi Trade"
-        avatarId={47} 
+        title="Moxie Product Manager"
+        avatarId={35} 
       />
 
         <ReviewCard
-        quote="Outflame turned our branding into a powerful growth tool. Their framework gave us clarity, identity, and confidence to scale across 14 countries."
+        quote="We replaced three automation tools and cut our operational costs by 42% in the first month. Everything is now centralized, faster, and easier to maintain."
         name="Damian"
-        title="CEO at Oxi Trade"
+        title="CTO, Fintech Startup"
         avatarId={8} 
       />
 
