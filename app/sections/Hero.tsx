@@ -4,14 +4,15 @@ import CtaBtn from "../components/CtaBtn";
 import Menu from "../components/Menu";
 import MacWindowMockup from "../components/MacWindowMockup";
 import TextDescription from "../components/TextDescription";
+import LiveClock from "../components/LiveClock";
 
 export default  function Hero() {
     return (
         <div className="flex flex-col p-6 md:p-10">
 
-            
-            <div className="relative  z-10 w-full min-h-screen overflow-visible   rounded-[32px] mt-20">
-                <Menu/>
+            <div className="relative  z-10 w-full min-h-screen overflow-visible  mt-20">
+               
+                {/* <Menu/> */}
                 <FloatingIcon />
                 
                 <FloatingText
