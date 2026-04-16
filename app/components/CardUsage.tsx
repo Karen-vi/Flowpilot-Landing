@@ -1,6 +1,7 @@
 "use client";
-import {motion} from "framer-motion";
+import {motion, useInView} from "framer-motion";
 import Image from "next/image";
+import { useRef } from "react";
 
 
 type ToolItem = {
@@ -18,11 +19,22 @@ type Props = {
 
 
 export default function CardUsage({items,title,numeration}:Props) {
+
+  const ref = useRef(null);
+  const isInView = useInView(ref, {
+    amount: 0.3, 
+  });
+
+
   return (
-    <div className="w-[260px] sm:w-[280px]  ">
+    <div ref={ref} className="w-[260px] sm:w-[280px]  ">
+
+      
       <motion.div
-        initial="hidden"
-        animate="visible"
+        
+        initial={{ opacity: 0, y: 20 }}
+        animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+        transition={{ duration: 0.6, ease: "easeOut" }}
         className="rounded-2xl p-4 shadow-xl border border-white/10
                    bg-white/5 backdrop-blur-xl text-white
                    hover:bg-white/10 transition"
