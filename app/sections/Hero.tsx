@@ -3,7 +3,7 @@ import FloatingText from "../components/FloatingText";
 import CtaBtn from "../components/CtaBtn";
 import Menu from "../components/Menu";
 import MacWindowMockup from "../components/MacWindowMockup";
-import AllInOneApp from "../components/AllInOneAppText";
+import TextDescription from "../components/TextDescription";
 
 export default  function Hero() {
     return (
@@ -48,7 +48,7 @@ export default  function Hero() {
             
            <div className="flex flex-col md:flex-row items-center gap-5 md:gap-16 w-full mt-8 md:mt-0">
             <div className="w-full md:w-1/2   flex justify-center">
-              <AllInOneApp></AllInOneApp>
+              <TextDescription  styles="w-full md:w-1/2 flex-col  gap-6 px-4 md:px-0" title="All in one app" description="FlowPilot brings your entire teams workflow into a single, unified platform. Stop jumping between tools and losing context. Capture decisions, preserve knowledge, and automate repetitive tasks—all in one place. Built for teams that move fast, think deeply, and need to stay aligned. FlowPilot turns your scattered work into organized progress." />
             </div>
             <div className="w-full md:w-1/2 flex justify-center mt-10 md:mt-0">
               <MacWindowMockup></MacWindowMockup>
