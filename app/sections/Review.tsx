@@ -4,7 +4,7 @@ import TextDescription from "../components/TextDescription";
 export default function Review() {
   return (
     <>
-    <div className=" flex sm:flex-col md:flex-row items-center justify-center gap-12 md:gap-20"> 
+    <div className="flex flex-col md:flex-row items-center justify-center gap-12 md:gap-20"> 
 
         <ReviewCard
             quote="Outflame turned our branding into a powerful growth tool. Their framework gave us clarity, identity, and confidence to scale across 14 countries."
@@ -31,8 +31,5 @@ export default function Review() {
 
     </div>
 
-    <div className="py-16 flex  items-center justify-center gap-12">
-      
-    </div>
     </>
     )}
