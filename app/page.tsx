@@ -1,7 +1,8 @@
 
-import Menu from "./components/Menu";
+
 import Feature from "./sections/Feature";
 import Hero from "./sections/Hero";
+import SignupSection from "./sections/SignupSection";
 
 
 export default function Home() {
@@ -10,6 +11,7 @@ export default function Home() {
       <main >
         <Hero />
         <Feature/>
+        <SignupSection/>
       </main>
     </div>
   );
