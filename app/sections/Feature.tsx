@@ -1,3 +1,4 @@
+import BenefictsCard from "../components/BenefictsCard";
 import CardUsage from "../components/CardUsage";
 import TextDescription from "../components/TextDescription";
 
@@ -56,6 +57,13 @@ export default function Feature (){
             <CardUsage numeration="1" title="Define Workflow" items={workFlowTools}  />
             <CardUsage numeration="2" title="Embedded Knowledge" items={agentTools}  />
             <CardUsage numeration="3" title="AI executes" items={runTools}  />
+        </div>
+
+        <div className=" flex  flex-wrap gap-20 justify-center " >
+            <BenefictsCard icon = '/bolt.svg' title="Velocity" description="Accelerate execution by turning structured workflows into automated actions that move instantly from planning to delivery." />
+            <BenefictsCard icon = '/cube.svg' title="Clarity" description="Eliminate ambiguity across your operations by keeping every decision, input, and process aligned in a single intelligent system." />
+            <BenefictsCard icon = '/ring-.svg' title="Continuity" description="Maintain seamless context across all tasks and teams, ensuring nothing is lost between steps, tools, or handoffs." /> 
+            <BenefictsCard icon = '/chart.svg' title="Scale" description="Increase efficiency by reducing manual intervention, minimizing errors, and ensuring consistent execution of tasks." /> 
         </div>
         </>
     )

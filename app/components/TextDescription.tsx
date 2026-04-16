@@ -6,7 +6,7 @@ import { motion, useInView } from "framer-motion"
 
 type textProps = {
     title: string;
-    description: string;
+    description?: string;
     styles:string;
 }
 
